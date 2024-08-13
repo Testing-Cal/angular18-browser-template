@@ -18,7 +18,7 @@ export class HomechartComponent {
     color:'skyblue',
     data: [5,7,9,13,18,25]
     },{
-    name:'Oerational Efficiency',
+    name:'Operational Efficiency',
     color:'orange',
     data: [0.6,0.65,0.7,0.75,0.8,0.85]
     },{
@@ -108,7 +108,7 @@ export class HomechartComponent {
         color:'skyblue',
         data: [5,7,9,13,18,25]
         },{
-        name:'Oerational Efficiency',
+        name:'Operational Efficiency',
         type: 'line',
         color:'orange',
         data: [0.6,0.65,0.7,0.75,0.8,0.85]
