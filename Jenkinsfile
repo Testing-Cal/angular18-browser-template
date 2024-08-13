@@ -326,7 +326,7 @@ pipeline {
                if ("${list[i]}" == "'UnitTests'" && env.ACTION == 'DEPLOY') {
                  stage('Unit Tests') {
                   sh """
-                  docker run --rm --user root -v "$WORKSPACE":/opt/repo -w /opt/repo $NODE_IMAGE /bin/bash -c "cd /opt/repo &&  npm install -f && npm test"
+                  docker run --rm --user root -v "$WORKSPACE":/opt/repo -w /opt/repo $NODE_IMAGE /bin/bash -c "cd /opt/repo &&  npm install -f && npm run test"
                   sudo chown -R `id -u`:`id -g` "$WORKSPACE"
                   """
                  }
