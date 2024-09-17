@@ -1,5 +1,5 @@
 # stage1 as builder
-FROM node:22.6.0 as builder
+FROM node:22.6.0-slim as builder
 
 # copy the package.json to install dependencies
 COPY package.json package-lock.json ./
@@ -16,7 +16,7 @@ RUN cd src/environments && sed -i "s|"basepath"|"${CONTEXT}"|g" *
 # Build the project and copy the files
 RUN npm run build
 
-FROM node:20.11.1
+FROM node:20.11.1-slim
 ARG CONTEXT='/'
 
 #!/bin/sh
