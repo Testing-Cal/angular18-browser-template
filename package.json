@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.13",
     "babel-jest": "^29.7.0",
     "highcharts": "^11.4.6",
     "highcharts-3d": "^0.1.7",
